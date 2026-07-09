@@ -1,9 +1,6 @@
 "use client";
 
-// Replace with the real business WhatsApp number in international format,
-// digits only, no leading +. Example: Nigerian number 0803 123 4567
-// becomes 2348031234567.
-const WHATSAPP_NUMBER = "2348000000000";
+const WHATSAPP_NUMBER = "2348082316488";
 const DEFAULT_MESSAGE = "Hello Magna Finishes, I'd like to ask about your paints.";
 
 export default function WhatsAppFab() {

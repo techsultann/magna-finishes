@@ -47,7 +47,7 @@ export default function Hero() {
 
           <motion.p variants={item} className="mt-6 max-w-md text-base text-primer/75 sm:text-lg">
             Magna Finishes Global Limited formulates architectural and industrial coatings for
-            homes, sites and factories across Nigeria &mdash; backed by {yearsInBusiness} years of
+            homes, sites and factories across Nigeria we also sell paint chemicals in retail and wholesale backed by {yearsInBusiness} years of
             batch-tested quality and a team that shows up after the job is done.
           </motion.p>
 
