@@ -51,8 +51,8 @@ export default function Hero() {
             batch-tested quality and a team that shows up after the job is done.
           </motion.p>
 
-          <motion.div variants={item} className="mt-8 flex flex-wrap gap-4">
-x`x`            <a
+          <motion.div variants={item} className="mt-8 flex flex-wrap gap-4">            
+            <a
               href="#contact"
               className="rounded-full bg-signal-red px-7 py-3.5 text-sm font-semibold tracking-wide transition-transform hover:-translate-y-0.5"
             >
