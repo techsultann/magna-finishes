@@ -38,16 +38,16 @@ export default function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="rounded-2xl border border-signal-gold/30 bg-charcoal-soft p-8 text-center">
-        <p className="font-display text-xl text-signal-gold">Message sent.</p>
-        <p className="mt-2 text-sm text-primer/70">
+      <div className="rounded-2xl border border-signal-red/25 bg-white p-8 text-center">
+        <p className="font-display text-xl text-signal-red">Message sent.</p>
+        <p className="mt-2 text-sm text-charcoal/70">
           Thanks for reaching out — we reply within one business day. For anything urgent, message
           us on WhatsApp using the button in the corner.
         </p>
         <button
           type="button"
           onClick={() => setStatus("idle")}
-          className="mt-6 rounded-full border border-primer/25 px-5 py-2 text-sm font-semibold text-primer/85 hover:border-signal-gold hover:text-signal-gold"
+          className="mt-6 rounded-full border border-charcoal/20 px-5 py-2 text-sm font-semibold text-charcoal/80 hover:border-signal-red hover:text-signal-red"
         >
           Send another message
         </button>
@@ -59,7 +59,7 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-5" noValidate>
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
-          <label htmlFor="name" className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-primer/60">
+          <label htmlFor="name" className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-charcoal/60">
             Full name
           </label>
           <input
@@ -68,12 +68,12 @@ export default function ContactForm() {
             type="text"
             required
             autoComplete="name"
-            className="w-full rounded-lg border border-charcoal-line bg-charcoal-soft px-4 py-3 text-sm text-primer placeholder:text-primer/30 focus:border-signal-gold"
+            className="w-full rounded-lg border border-charcoal/15 bg-white px-4 py-3 text-sm text-charcoal placeholder:text-charcoal/35 focus:border-signal-red"
             placeholder="Adaeze Okafor"
           />
         </div>
         <div>
-          <label htmlFor="phone" className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-primer/60">
+          <label htmlFor="phone" className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-charcoal/60">
             Phone number
           </label>
           <input
@@ -82,14 +82,14 @@ export default function ContactForm() {
             type="tel"
             required
             autoComplete="tel"
-            className="w-full rounded-lg border border-charcoal-line bg-charcoal-soft px-4 py-3 text-sm text-primer placeholder:text-primer/30 focus:border-signal-gold"
+            className="w-full rounded-lg border border-charcoal/15 bg-white px-4 py-3 text-sm text-charcoal placeholder:text-charcoal/35 focus:border-signal-red"
             placeholder="080X XXX XXXX"
           />
         </div>
       </div>
 
       <div>
-        <label htmlFor="email" className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-primer/60">
+        <label htmlFor="email" className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-charcoal/60">
           Email address
         </label>
         <input
@@ -98,20 +98,20 @@ export default function ContactForm() {
           type="email"
           required
           autoComplete="email"
-          className="w-full rounded-lg border border-charcoal-line bg-charcoal-soft px-4 py-3 text-sm text-primer placeholder:text-primer/30 focus:border-signal-gold"
+          className="w-full rounded-lg border border-charcoal/15 bg-white px-4 py-3 text-sm text-charcoal placeholder:text-charcoal/35 focus:border-signal-red"
           placeholder="you@example.com"
         />
       </div>
 
       <div>
-        <label htmlFor="service" className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-primer/60">
+        <label htmlFor="service" className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-charcoal/60">
           What do you need?
         </label>
         <select
           id="service"
           name="service"
           defaultValue="Consultation"
-          className="w-full rounded-lg border border-charcoal-line bg-charcoal-soft px-4 py-3 text-sm text-primer focus:border-signal-gold"
+          className="w-full rounded-lg border border-charcoal/15 bg-white px-4 py-3 text-sm text-charcoal focus:border-signal-red"
         >
           <option>Consultation</option>
           <option>Product order / quote</option>
@@ -121,7 +121,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-primer/60">
+        <label htmlFor="message" className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-charcoal/60">
           Tell us about the job
         </label>
         <textarea
@@ -129,7 +129,7 @@ export default function ContactForm() {
           name="message"
           required
           rows={4}
-          className="w-full rounded-lg border border-charcoal-line bg-charcoal-soft px-4 py-3 text-sm text-primer placeholder:text-primer/30 focus:border-signal-gold"
+          className="w-full rounded-lg border border-charcoal/15 bg-white px-4 py-3 text-sm text-charcoal placeholder:text-charcoal/35 focus:border-signal-red"
           placeholder="Surface, size of the area, and rough timeline"
         />
       </div>
@@ -143,7 +143,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="w-full rounded-full bg-signal-red px-6 py-3.5 text-sm font-semibold tracking-wide transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+        className="w-full rounded-full bg-signal-red px-6 py-3.5 text-sm font-semibold tracking-wide text-primer transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
       >
         {status === "submitting" ? "Sending…" : "Send message"}
       </button>

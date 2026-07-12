@@ -57,7 +57,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${displayFont.variable} ${bodyFont.variable} ${monoFont.variable}`}>
-      <body className="font-body bg-charcoal text-primer antialiased">
+      <body className="font-body bg-primer text-charcoal antialiased">
         {children}
         <WhatsAppFab />
       </body>

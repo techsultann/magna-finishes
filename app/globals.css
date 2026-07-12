@@ -13,8 +13,8 @@ html {
 }
 
 body {
-  background-color: #15161B;
-  color: #F6F2E9;
+  background-color: #F6F2E9;
+  color: #15161B;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -115,5 +115,5 @@ select:focus-visible {
 
 .reveal-slider::-webkit-slider-runnable-track {
   height: 4px;
-  background: rgba(246, 242, 233, 0.35);
+  background: rgba(21, 22, 27, 0.25);
 }
